@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="389.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxproject.HelloController">
+    <children>
+        <ImageView fitHeight="362.0" fitWidth="585.0" layoutX="-4.0" layoutY="27.0" opacity="0.37" pickOnBounds="true">
+            <image>
+                <Image url="@Login.jpg" />
+            </image>
+        </ImageView>
+        <Text layoutX="230.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot password?">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Text>
+        <TextField fx:id="Username" layoutX="184.0" layoutY="104.0" prefHeight="31.0" prefWidth="212.0" promptText="Username or email" />
+        <PasswordField fx:id="User_password" layoutX="184.0" layoutY="164.0" prefHeight="31.0" prefWidth="212.0" promptText="Password" />
+        <Button fx:id="sid" layoutX="227.0" layoutY="266.0" mnemonicParsing="false" onAction="#onHelloButtonClick" onMouseClicked="#onHelloButtonClick" prefHeight="25.0" prefWidth="120.0" text="LOGIN">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <HBox alignment="CENTER" layoutY="-4.0" prefHeight="52.0" prefWidth="578.0" style="-fx-background-color: #032d4d;">
+            <children>
+                <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="THE PAW PET ADOPTION HOME" textAlignment="CENTER">
+                    <font>
+                        <Font name="Comic Sans MS Bold" size="19.0" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+    </children>
+</Pane>
